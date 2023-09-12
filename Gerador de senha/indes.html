@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="titulo">
+        <h1 class="titulo__texto">Gerador de Senha</h1>
+    </div>
+    <main class="container">
+        <p class="texto__container"> Sua senha terá <span id="quantidade__caracteres"></span> caracteres:</p>
+        <input class="input__container" id="input__container" type="range" min="6" max="30" value="18">
+        <button class="btn__container" id="btn__container" onclick="geradorDeSenha()">Gerar Senha</button>
+    </main>
+    <div class="hide" id="divSome">
+        <p  class="senha__texto">Sua senha gerada foi:</p>
+        <span class="senha__valor" id="senha__valor" onclick="copiaSenha()"></span>
+        <p>Clique aqui para copiar a Senha</p>
+    </div>
+    <footer class="rodape"> Site criado por Igor F Junqueira Portugal</footer>
+</body>
+</html>
